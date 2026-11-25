@@ -1,0 +1,18 @@
+import os
+
+project_path = r"C:\Users\Deepak Kumar\Desktop\Water_Potability_Project"
+
+requirements = """
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+"""
+
+requirements_path = os.path.join(project_path, "requirements.txt")
+
+with open(requirements_path, "w") as f:
+    f.write(requirements.strip())
+
+print("requirements.txt created successfully!")

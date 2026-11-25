@@ -1,0 +1,15 @@
+gitignore_content = """
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+"""
+
+gitignore_path = os.path.join(project_path, ".gitignore")
+
+with open(gitignore_path, "w") as f:
+    f.write(gitignore_content.strip())
+
+print(".gitignore created successfully!")
